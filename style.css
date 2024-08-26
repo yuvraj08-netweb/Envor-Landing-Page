@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: headingFont;
+    src: url("./fonts/GraphikSemibold.otf");
+}  
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 786px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    .row{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+}
+.heading{
+    font-family: headingFont;
+    z-index: 1;
+}
+body {
+    background: #19191B;
+    /* overflow: hidden; */
+    color: #fff;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2.8;
+    margin-top: 42px;
+}
+.navbar .navLinks{
+    width: 410px;
+    display: flex;
+    justify-content: space-around;
+ 
+}
+#navBtn{
+    background: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+}
+.shadowOne{
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.themeBtn{
+    background: #5454D4;
+    color: #fff;
+    padding: 7px 24px;
+    border-radius: 3px;
+    border: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.row{
+    display: flex;
+}
+.heroLeft{
+    min-width: 50%;
+}
+.hreoRight{
+    min-width: 50%;
+}
+.imagesContainer{
+    position: relative;
+}
+.squareBehindPerson{
+    position: absolute;
+    top: 40px;
+    left: 130px;
+    z-index: -1;
+}
+.personImg{
+    position: relative;
+    top: -100px;
+    right: -80px;
+}
+.mw{
+    position: absolute;
+    top: 0;
+    left:-50px;
+}
+.circles{
+    position: absolute;
+    top: -50px;
+    right: 0px;
+}
+.triangles{
+    position: absolute;
+    bottom: 100px;
+    left:-100px;
+}
+.add{
+    position: absolute;
+    bottom: 150px;
+    right:50px;
+}
+.heroHeading{
+    width: 450px;
+    font-size: 65px;
+}
+.heroSection{
+    margin-top: 90px;
+}
+.infoPara{
+    color: #FFFFFFB2;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 39px;
+    margin-top: 24px;
+    margin-bottom: 50px;
+    max-width: 520px;
+}
+.shadowTwo{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
