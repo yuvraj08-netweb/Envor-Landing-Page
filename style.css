@@ -1,34 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 @font-face {
     font-family: headingFont;
     src: url("./fonts/GraphikSemibold.otf");
-}  
+}
 
 /* ################################  UNIVERSAL STYLING ############################## */
-.heading{
+.heading {
     font-family: headingFont;
     z-index: 1;
 }
+
 body {
     background: #19191B;
     /* overflow: hidden; */
     color: #fff;
     font-family: "Nunito Sans", sans-serif;
 }
-ul{
+
+ul {
     list-style: none;
 }
-ul li a{
+
+ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
 }
-.themeBtn{
+
+.themeBtn {
     background: #5454D4;
     color: #fff;
     padding: 12px 24px;
@@ -37,26 +43,32 @@ ul li a{
     font-weight: 700;
     display: flex;
     align-items: center;
+    font-size: 17px;
 }
-.subHeading{
+
+.subHeading {
     font-family: headingFont;
     font-weight: 700;
     font-size: 60px;
     line-height: 70px;
 }
-.paraGraph{
+
+.paraGraph {
     font-size: 21px;
     font-weight: 400;
     line-height: 39px;
 }
-.sectionMargin{
+
+.sectionMargin {
     margin-top: 150px;
 }
+
 .container {
     width: 80%;
     margin: auto;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
 }
@@ -66,32 +78,27 @@ ul li a{
         width: 90%;
         margin: auto;
     }
-    .row{
+
+    .row {
         flex-direction: column;
-
-
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .container {
-        width: 100%;
     }
 }
 /* ################################  NavBAR STYLING ############################## */
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     line-height: 2.8;
     padding-top: 42px;
 }
-.navbar .navLinks{
+
+.navbar .navLinks {
     width: 410px;
     display: flex;
     justify-content: space-around;
- 
+
 }
-#navBtn{
+
+#navBtn {
     background: none;
     color: #fff;
     border: 1px solid #fff;
@@ -99,61 +106,84 @@ ul li a{
     font-size: 18px;
     cursor: pointer;
 }
-/* .shadowOne{
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
 
-.heroLeft{
+.toggleButton{
+    display: none;
+}
+.mobilenav{
+    display: none;
+}
+.heroLeft {
     min-width: 50%;
 }
-.hreoRight{
+
+.hreoRight {
     min-width: 50%;
 }
-.imagesContainer{
+
+.imagesContainer {
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.squareBehindPerson{
+
+
+.squareBehindPerson {
     position: absolute;
     top: 40px;
     left: 130px;
     z-index: -1;
 }
-.personImg{
+
+.squareBehindPerson img {
+    max-height: 400px;
+}
+
+.personImg {
     position: relative;
     top: -100px;
     right: -80px;
 }
-.mw{
+
+.personImg img {
+    max-height: 600px;
+}
+
+.mw {
     position: absolute;
     top: 0;
-    left:-50px;
+    left: -50px;
 }
-.circles{
+
+.circles {
     position: absolute;
     top: -50px;
     right: 0px;
 }
-.triangles{
+
+.triangles {
     position: absolute;
     bottom: 100px;
-    left:-100px;
+    left: -100px;
 }
-.add{
+
+.add {
     position: absolute;
     bottom: 150px;
-    right:50px;
+    right: 50px;
 }
-.heroHeading{
+
+.heroHeading {
     width: 450px;
     font-size: 65px;
 }
-.heroSection{
+
+.heroSection {
     margin-top: 90px;
 }
-.infoPara{
+
+.infoPara {
     color: #FFFFFFB2;
     font-size: 21px;
     font-weight: 400;
@@ -162,6 +192,7 @@ ul li a{
     margin-bottom: 50px;
     max-width: 520px;
 }
+
 /* .shadowTwo{
     position: absolute;
     right: 0;
@@ -174,175 +205,398 @@ ul li a{
     background-position: top left,top right;
 } */
 /* ################################  Vido Section STYLING ############################## */
-.videoContainer{
+.videoContainer {
     margin-top: 50px;
     width: 100%;
 }
+
 /* ################################  Services Section STYLING ############################## */
-#services,.serviceInnerContainer{
+#services,
+.serviceInnerContainer {
     position: relative;
 }
-.serviceHeader{
+
+.serviceHeader {
     text-align: center;
     position: relative;
     width: 100%;
 }
-.decoreImgServiceOne{
+
+.decoreImgServiceOne {
     position: absolute;
     top: -50px;
 }
-.decoreImgServiceTwo{
+
+.decoreImgServiceTwo {
     position: absolute;
     right: 0px;
     transform: rotate(60deg);
 }
-.servicesGrid{
+
+.servicesGrid {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
     column-gap: 20px;
 }
-.serviceCard{
+
+.serviceCard {
     margin-top: 95px;
     text-align: center;
     padding: 0 40px;
 }
-.servicePara{
+
+.servicePara {
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
     margin-top: 20px;
 }
-.serviceHeading{
+
+.serviceHeading {
     font-size: 28px;
     font-weight: 600;
     line-height: 38.19px;
     margin-top: 20px;
 }
-.decoreImgServiceThree{
+
+.decoreImgServiceThree {
     position: absolute;
     bottom: -80px;
     left: -50px;
     transform: rotate(30deg);
 }
+
 /* ################################  Portfolio Section STYLING ############################## */
 
-.portInnerContainer{
+.portInnerContainer {
     position: relative;
     margin-top: 150px;
 }
-#portfolio{
+
+#portfolio {
     position: relative;
 }
-.portfolioImages{
+
+.portfolioImages {
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: space-evenly;
     margin-top: 70px;
 }
-.imageCard{
+
+.imageCard {
     background-color: #1E1E20;
     padding: 25px;
     border-radius: 20px;
     height: max-content;
 }
-.imgCardTwo{
+.imageCard img{
+    width: 250px;
+}
+.imgCardTwo {
     margin-top: 58px;
 }
-.imgCardThree{
+
+.imgCardThree {
     margin-top: 116px;
 }
-.paginationDots{
+
+
+.paginationDots {
     text-align: center;
     margin-top: 30px;
 }
-.pageDot{
-    display: inline-block; 
+
+.pageDot {
+    display: inline-block;
     min-height: 8px;
     min-width: 8px;
     background-color: #121213;
     border-radius: 100%;
 }
-.dotLong{
+
+.dotLong {
     min-width: 16px;
     background-color: #5454D4;
     border-radius: 40%;
 }
-.portDecoreImgTwo{
+
+.portDecoreImgTwo {
     position: absolute;
     right: 0;
     transform: rotate(-30deg);
 }
-
+.paginationArrows{
+    display: none;
+}
 /* ################################  Contact Us Section STYLING ############################## */
 
-#contactUs{
+#contactUs {
     background: #1E1E2080;
     min-height: 500px;
     display: flex;
     align-items: center;
 }
-.contactInnerContainer{
+
+.contactInnerContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
-.contactHeader{
+
+.contactHeader {
     max-width: 800px;
 }
-.contactDecoreOne{
+
+.contactDecoreOne {
     position: absolute;
     right: 0;
     top: -100px;
 }
-.contactDecoreTwo{
+
+.contactDecoreTwo {
     position: absolute;
     bottom: -120px;
     left: 40px;
 }
+
 /* ################################  Footer STYLING ############################## */
 
-.footerClass{
+.footerClass {
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
     margin-top: 50px;
+    line-height: 2.5;
 }
-.footerLinks{
+
+.footerLinks {
     display: flex;
     width: 432px;
     justify-content: space-between;
 }
+
 /* ################################  Shadows STYLING ############################## */
 
 
-.topSection{
+.topSection {
     position: relative;
 }
-.shadowOneTop{
+
+.shadowOneTop {
     position: absolute;
     top: 0;
     left: 0;
 }
-.shadowTwoTop{
+
+.shadowTwoTop {
     position: absolute;
     top: 0;
     right: 0;
 }
-.shadowOneLeft{
+
+.shadowOneLeft {
     position: absolute;
     top: -500px;
 }
-.shadowTwoRight{
+
+.shadowTwoRight {
 
     position: absolute;
     right: 0px;
     top: -400px;
-    
+
 }
-.shadowOneRight{
+
+.shadowOneRight {
     position: absolute;
     right: 0px;
     top: -500px;
+}
+
+/* ############################################################################################ */
+/* #################################  Adding Responsiveness ################################### */
+/* ############################################################################################ */
+
+@media screen and (max-width:1124px) {
+    body{
+        overflow-x:auto;
+    }
+    .personGroup img {
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    .mw {
+        left: 0px;
+    }
+
+    .triangles {
+        left: 0px;
+    }
+
+    .add {
+        right: -30px;
+    }
+    .heroHeading {
+        font-size: 55px;
+    }
+    .infoPara{
+        font-size: 16px;
+        line-height: 29px;
+    }
+
+    .subHeading{
+        font-size: 40px;
+    }
+    .serviceHeading{
+        font-size: 20px;
+    }
+    .servicePara{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .imageCard{
+        padding: 10px;
+    }
+    .imageCard img{
+        width: 200px;
+        margin: auto;
+    }
+
+    .portfolioImages {
+        width: 100%;
+    }
+
+    .contactHeader{
+        width: 70%;
+    }
+    .footerLinks {
+        width: 400px;
+        margin: auto;
+    }    
+}
+@media screen and (max-width:768px){
+    .hreoRight{
+        margin-top: 150px;
+    }
+    .heroHeading {
+        font-size: 65px;
+    }
+    .infoPara{
+        font-size: 21px;
+        line-height: 39px;
+    }
+    .add {
+        right: 0px;
+    }
+    .circles{
+        top: 0;
+        right: 0;
+    }
+    .personImg{
+        left: 0;
+    }
+    .hidden{
+        display: none !important;
+    }
+    .toggleButton{
+        display: block;
+        z-index: 20;
+        cursor: pointer;
+    }
+    .toggleButton img{
+        height: 50px;
+        width: 50px;  
+    }
+    .decoreImgServiceOne{
+        top: -100px;
+    }
+    /* #services{
+        margin-top: 200px;
+    } */
+    .headingContainer{
+        padding-top: 30px;
+    }
+    .servicesGrid{
+        grid-template-columns: auto auto;
+    }
+    .imgHidden{
+        display: none;
+    }
+    .portfolioImages{
+        grid-template-columns: auto;
+    }
+    .imageCard img{
+        width: 100%;
+    }
+    .paginationDots{
+        display: none;
+    }
+    .paginationArrows{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+    .arrowLeft{
+        margin-right: 20px;
+    }
+    .contactInnerContainer{
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+    .contactBtn{
+        margin-top: 40px;
+    }
+    .footerClass{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerLinks{
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobilenav{
+        display: flex;
+    }
+    .pcNav{
+        position: fixed;
+        background-color: #121213;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 50vw;
+        display: block;
+        padding: 20px;
+        line-height: 5.5;
+    }
+    .pcNav .navLinks{
+        display: block;
+    }
+    .pcNav .brandLogo{
+        display: none;
+    }
+}
+
+@media screen and (max-width:585px) {
+    .servicesGrid{
+        grid-template-columns: auto;
+    }
+    .heroHeading {
+        width: 100%;
+        font-size: 45px;
+    }
+    .footerClass{
+        margin-top: 100px;
+    }
+    .footerLinks{
+        width: 100%;
+    }
+    .decoreImgServiceThree{
+        left: 0;
+    }
 }
