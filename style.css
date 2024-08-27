@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -7,27 +8,8 @@
     font-family: headingFont;
     src: url("./fonts/GraphikSemibold.otf");
 }  
-.container {
-    width: 80%;
-    margin: auto;
-}
 
-
-@media screen and (max-width: 786px) {
-    .container {
-        width: 90%;
-        margin: auto;
-    }
-    .row{
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 640px) {
-    .container {
-        width: 100%;
-    }
-}
+/* ################################  UNIVERSAL STYLING ############################## */
 .heading{
     font-family: headingFont;
     z-index: 1;
@@ -36,6 +18,7 @@ body {
     background: #19191B;
     /* overflow: hidden; */
     color: #fff;
+    font-family: "Nunito Sans", sans-serif;
 }
 ul{
     list-style: none;
@@ -45,11 +28,62 @@ ul li a{
     text-decoration: none;
     font-size: 18px;
 }
+.themeBtn{
+    background: #5454D4;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 3px;
+    border: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+.subHeading{
+    font-family: headingFont;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+}
+.paraGraph{
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 39px;
+}
+.sectionMargin{
+    margin-top: 150px;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 786px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    .row{
+        flex-direction: column;
+
+
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        width: 100%;
+    }
+}
+/* ################################  NavBAR STYLING ############################## */
 .navbar{
     display: flex;
     justify-content: space-between;
     line-height: 2.8;
-    margin-top: 42px;
+    padding-top: 42px;
 }
 .navbar .navLinks{
     width: 410px;
@@ -63,29 +97,15 @@ ul li a{
     border: 1px solid #fff;
     padding: 12px 24px;
     font-size: 18px;
+    cursor: pointer;
 }
-.shadowOne{
+/* .shadowOne{
     z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
-}
-.themeBtn{
-    background: #5454D4;
-    color: #fff;
-    padding: 7px 24px;
-    border-radius: 3px;
-    border: none;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-}
+} */
 
-
-
-.row{
-    display: flex;
-}
 .heroLeft{
     min-width: 50%;
 }
@@ -142,8 +162,187 @@ ul li a{
     margin-bottom: 50px;
     max-width: 520px;
 }
-.shadowTwo{
+/* .shadowTwo{
     position: absolute;
     right: 0;
     top: 0;
+} */
+
+/* #topSection{
+    background: url("./img/Rectangle\ 9521.png"), url("./img/Rectangle\ 9522.png");
+    background-repeat: no-repeat,no-repeat;
+    background-position: top left,top right;
+} */
+/* ################################  Vido Section STYLING ############################## */
+.videoContainer{
+    margin-top: 50px;
+    width: 100%;
+}
+/* ################################  Services Section STYLING ############################## */
+#services,.serviceInnerContainer{
+    position: relative;
+}
+.serviceHeader{
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+.decoreImgServiceOne{
+    position: absolute;
+    top: -50px;
+}
+.decoreImgServiceTwo{
+    position: absolute;
+    right: 0px;
+    transform: rotate(60deg);
+}
+.servicesGrid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    column-gap: 20px;
+}
+.serviceCard{
+    margin-top: 95px;
+    text-align: center;
+    padding: 0 40px;
+}
+.servicePara{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 20px;
+}
+.serviceHeading{
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 38.19px;
+    margin-top: 20px;
+}
+.decoreImgServiceThree{
+    position: absolute;
+    bottom: -80px;
+    left: -50px;
+    transform: rotate(30deg);
+}
+/* ################################  Portfolio Section STYLING ############################## */
+
+.portInnerContainer{
+    position: relative;
+    margin-top: 150px;
+}
+#portfolio{
+    position: relative;
+}
+.portfolioImages{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+    margin-top: 70px;
+}
+.imageCard{
+    background-color: #1E1E20;
+    padding: 25px;
+    border-radius: 20px;
+    height: max-content;
+}
+.imgCardTwo{
+    margin-top: 58px;
+}
+.imgCardThree{
+    margin-top: 116px;
+}
+.paginationDots{
+    text-align: center;
+    margin-top: 30px;
+}
+.pageDot{
+    display: inline-block; 
+    min-height: 8px;
+    min-width: 8px;
+    background-color: #121213;
+    border-radius: 100%;
+}
+.dotLong{
+    min-width: 16px;
+    background-color: #5454D4;
+    border-radius: 40%;
+}
+.portDecoreImgTwo{
+    position: absolute;
+    right: 0;
+    transform: rotate(-30deg);
+}
+
+/* ################################  Contact Us Section STYLING ############################## */
+
+#contactUs{
+    background: #1E1E2080;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+.contactInnerContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.contactHeader{
+    max-width: 800px;
+}
+.contactDecoreOne{
+    position: absolute;
+    right: 0;
+    top: -100px;
+}
+.contactDecoreTwo{
+    position: absolute;
+    bottom: -120px;
+    left: 40px;
+}
+/* ################################  Footer STYLING ############################## */
+
+.footerClass{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.footerLinks{
+    display: flex;
+    width: 432px;
+    justify-content: space-between;
+}
+/* ################################  Shadows STYLING ############################## */
+
+
+.topSection{
+    position: relative;
+}
+.shadowOneTop{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.shadowTwoTop{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.shadowOneLeft{
+    position: absolute;
+    top: -500px;
+}
+.shadowTwoRight{
+
+    position: absolute;
+    right: 0px;
+    top: -400px;
+    
+}
+.shadowOneRight{
+    position: absolute;
+    right: 0px;
+    top: -500px;
 }
